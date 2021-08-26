@@ -1,4 +1,4 @@
-!/target/release/coinnet-node
+!target/release/coinnet-node
 **/target/
 **/*.rs.bk
 *.swp
@@ -28,4 +28,3 @@ rls*.log
 *.iml
 **/scripts/
 **/data/
-!/target/release/coinnet-node
