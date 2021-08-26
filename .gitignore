@@ -1,3 +1,4 @@
+!/target/release/coinnet-node
 **/target/
 **/*.rs.bk
 *.swp
