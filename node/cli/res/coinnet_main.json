@@ -1,9 +1,9 @@
 {
-  "name": "1COIN Testnet",
-  "id": "coinnet_testnet",
+  "name": "1COIN Network",
+  "id": "coinnet_mainnet",
   "chainType": "Live",
   "bootNodes": [
-    "/dns/testnet.1coin.io/tcp/30333/ws/p2p/12D3KooWHFJvoPzfX1BVZWcbT2wDMc6q6EZkPJrqHzd8t7fcujwk"
+    "/dns/mainnet.1coin.network/tcp/30333/ws/p2p/12D3KooWHFJvoPzfX1BVZWcbT2wDMc6q6EZkPJrqHzd8t7fcujwk"
   ],
   "telemetryEndpoints": [],
   "protocolId": null,

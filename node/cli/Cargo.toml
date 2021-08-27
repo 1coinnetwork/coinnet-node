@@ -8,7 +8,7 @@ homepage = "https://1coinnetwork.com"
 license = "MIT"
 name = "coinnet-node"
 repository = "https://github.com/1coinnetwork/full-node/"
-version = "0.0.2"
+version = "0.0.3"
 
 [package.metadata.wasm-pack.profile.release]
 # `wasm-opt` has some problems on linux, see

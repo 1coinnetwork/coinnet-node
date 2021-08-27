@@ -69,9 +69,9 @@ pub fn coinnet_test_config() -> Result<ChainSpec, String> {
     ChainSpec::from_json_bytes(&include_bytes!("../res/coinnet.json")[..])
 }
 
-/// Flaming fir testnet generator
-pub fn flaming_fir_config() -> Result<ChainSpec, String> {
-    ChainSpec::from_json_bytes(&include_bytes!("../res/flaming-fir.json")[..])
+/// 1COIN main config
+pub fn coinnet_main_config() -> Result<ChainSpec, String> {
+    ChainSpec::from_json_bytes(&include_bytes!("../res/coinnet_main.json")[..])
 }
 
 fn session_keys(
