@@ -7,7 +7,7 @@ edition = "2018"
 homepage = "https://1coinnetwork.com"
 license = "MIT"
 name = "coinnet-node"
-repository = "https://github.com/1coinnetwork/full-node/"
+repository = "https://github.com/1coinnetwork/coinnet-node/"
 version = "0.0.3"
 
 [package.metadata.wasm-pack.profile.release]
