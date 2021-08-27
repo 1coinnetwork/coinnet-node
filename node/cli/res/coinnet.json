@@ -1,5 +1,5 @@
 {
-  "name": "1COIN Testnet",
+  "name": "1COIN",
   "id": "coinnet_testnet",
   "chainType": "Live",
   "bootNodes": [
