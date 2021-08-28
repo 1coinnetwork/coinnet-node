@@ -74,7 +74,6 @@ pallet-recovery = {version = "3.0.0", default-features = false, git = 'https://g
 pallet-scheduler = {version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
 pallet-session = {version = "3.0.0", features = ["historical"], default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
 pallet-session-benchmarking = {version = "3.0.0", default-features = false, optional = true, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
-pallet-society = {version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
 pallet-staking = {version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
 pallet-staking-reward-curve = {version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
 pallet-sudo = {version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
@@ -121,7 +120,6 @@ runtime-benchmarks = [
   "pallet-multisig/runtime-benchmarks",
   "pallet-proxy/runtime-benchmarks",
   "pallet-scheduler/runtime-benchmarks",
-  "pallet-society/runtime-benchmarks",
   "pallet-staking/runtime-benchmarks",
   "pallet-timestamp/runtime-benchmarks",
   "pallet-tips/runtime-benchmarks",
@@ -190,7 +188,6 @@ std = [
   "sp-transaction-pool/std",
   "pallet-utility/std",
   "sp-version/std",
-  "pallet-society/std",
   "pallet-recovery/std",
   "pallet-vesting/std",
   "log/std",
@@ -233,7 +230,6 @@ try-runtime = [
   "pallet-transaction-payment/try-runtime",
   "pallet-treasury/try-runtime",
   "pallet-utility/try-runtime",
-  "pallet-society/try-runtime",
   "pallet-recovery/try-runtime",
   "pallet-vesting/try-runtime",
 ]
