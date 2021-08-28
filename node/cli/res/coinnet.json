@@ -3,7 +3,8 @@
   "id": "coinnet_testnet",
   "chainType": "Live",
   "bootNodes": [
-    "/dns/testnet.1coin.io/tcp/30333/ws/p2p/12D3KooWHFJvoPzfX1BVZWcbT2wDMc6q6EZkPJrqHzd8t7fcujwk"
+    "/dns/0.testnet.1coin.io/tcp/30333/ws/p2p/12D3KooWHFJvoPzfX1BVZWcbT2wDMc6q6EZkPJrqHzd8t7fcujwk",
+    "/dns/1.testnet.1coin.io/tcp/30333/ws/p2p/12D3KooWJFCgwoLmi88jZydVgNxELQ2BjYUkgs2ngW4LrxT8q43p"
   ],
   "telemetryEndpoints": [],
   "protocolId": null,

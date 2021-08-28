@@ -25,8 +25,8 @@ use node_runtime::Block;
 use node_runtime::{
     wasm_binary_unwrap, AuthorityDiscoveryConfig, BabeConfig, BalancesConfig, ContractsConfig,
     CouncilConfig, DemocracyConfig, ElectionsConfig, GrandpaConfig, ImOnlineConfig, IndicesConfig,
-    SessionConfig, SessionKeys, SocietyConfig, StakerStatus, StakingConfig, SudoConfig,
-    SystemConfig, TechnicalCommitteeConfig, MAX_NOMINATIONS,
+    SessionConfig, SessionKeys, StakerStatus, StakingConfig, SudoConfig, SystemConfig,
+    TechnicalCommitteeConfig, MAX_NOMINATIONS,
 };
 use pallet_im_online::sr25519::AuthorityId as ImOnlineId;
 use sc_chain_spec::ChainSpecExtension;
@@ -369,15 +369,6 @@ pub fn testnet_genesis(
         },
         pallet_membership_Instance1: Default::default(),
         pallet_treasury: Default::default(),
-        pallet_society: SocietyConfig {
-            members: endowed_accounts
-                .iter()
-                .take((num_endowed_accounts + 1) / 2)
-                .cloned()
-                .collect(),
-            pot: 0,
-            max_members: 999,
-        },
         pallet_vesting: Default::default(),
     }
 }
