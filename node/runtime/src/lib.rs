@@ -109,15 +109,15 @@ pub fn wasm_binary_unwrap() -> &'static [u8] {
 
 /// Runtime version.
 pub const VERSION: RuntimeVersion = RuntimeVersion {
-    spec_name: create_runtime_str!("node"),
-    impl_name: create_runtime_str!("coinnet-node"),
+    spec_name: create_runtime_str!("node"), // CHANGE THIS TO COINNET
+    impl_name: create_runtime_str!("coinnet"),
     authoring_version: 1,
     // Per convention: if the runtime behavior changes, increment spec_version
     // and set impl_version to 0. If only runtime
     // implementation changes and behavior does not, then leave spec_version as
     // is and increment impl_version.
-    spec_version: 2,
-    impl_version: 1,
+    spec_version: 4,
+    impl_version: 2,
     apis: RUNTIME_API_VERSIONS,
     transaction_version: 2,
 };
@@ -188,7 +188,7 @@ parameter_types! {
         })
         .avg_block_initialization(AVERAGE_ON_INITIALIZE_RATIO)
         .build_or_panic();
-    pub const SS58Prefix: u8 = 42;
+    pub const SS58Prefix: u8 = 85;
 }
 
 const_assert!(NORMAL_DISPATCH_RATIO.deconstruct() >= AVERAGE_ON_INITIALIZE_RATIO.deconstruct());
@@ -376,7 +376,7 @@ impl pallet_indices::Config for Runtime {
 }
 
 parameter_types! {
-    pub const ExistentialDeposit: Balance = DOLLARS / 100;
+    pub const ExistentialDeposit: Balance = DOLLARS / 2;
     // For weight estimation, we assume that the most locks on an individual account will be 50.
     // This number may need to be adjusted in the future if this assumption no longer holds true.
     pub const MaxLocks: u32 = 50;
@@ -1028,7 +1028,7 @@ impl pallet_lottery::Config for Runtime {
 }
 
 parameter_types! {
-    pub const AssetDeposit: Balance = 100 * DOLLARS;
+    pub const AssetDeposit: Balance = 1000 * DOLLARS;
     pub const ApprovalDeposit: Balance = 1 * DOLLARS;
     pub const StringLimit: u32 = 50;
     pub const MetadataDepositBase: Balance = 10 * DOLLARS;

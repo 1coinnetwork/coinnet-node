@@ -1,10 +1,10 @@
-# Substrate Simple Template
+# 1COIN Network Substrate based Node
 
-A simple template to bootstrap a Substrate node with BABE([Nominated Proof of Stake](https://substrate.dev/docs/en/knowledgebase/advanced/consensus#babe)) consensus
+A Substrate based node with BABE([Nominated Proof of Stake](https://substrate.dev/docs/en/knowledgebase/advanced/consensus#babe)) consensus
 
 ## Getting Started
 
-Follow the steps below to get started with the Simple Template.
+Follow the steps below to get started.
 
 ## Rust Setup
 
@@ -83,6 +83,7 @@ Generate pubic key from a secret phrase. This secret phrase is dedicated to deve
 ```bash
 subkey inspect --scheme ed25519 "fire penalty pony chase gift loan grid mule tape wrestle stuff salute"
 ```
+
 ```bash
 Secret phrase `fire penalty pony chase gift loan grid mule tape wrestle stuff salute` is account:
   Secret seed:       0x09c047c99b49d03c96f5915497cc5e7ffb0fce31b732abf35f2d7d1bfd89de13
@@ -109,6 +110,7 @@ This command will generate 3 validator session keys.
 ```bash
 sh scripts/prepare-test-net.sh 3
 ```
+
 ```
 (
 //5FNCTJVDxfFnmUYKHqbJHjUi7UFbZ6pzC39sL6E5RVpB4vc9
@@ -164,6 +166,7 @@ fn staging_testnet_config_genesis() -> GenesisConfig {
 ```
 
 Recompile
+
 ```
 cargo build --release
 ```
@@ -174,7 +177,7 @@ Generate pubic key from a secret phrase. This secret phrase is dedicated to deve
 
 ```bash
 subkey inspect --scheme sr25519 "royal novel glad piece waste napkin little pioneer decline fancy train sell"
-````
+```
 
 ```
 Secret phrase `royal novel glad piece waste napkin little pioneer decline fancy train sell` is account:
@@ -195,12 +198,12 @@ let root_key: AccountId = hex![
 ```
 
 #### Launch first node
+
 Launch first node with the public key above.
 
 ```bash
 ./target/release/substrate --chain staging -d data/validator1 --name validator1 --in-peers 256 --validator --ws-external --rpc-cors all --rpc-methods=unsafe --node-key 0x74a8cfbadb5d2b0178ec124791bfa8346ac3550a4f689923c806428090055277
 ```
-
 
 #### Launch other two nodes
 
@@ -213,17 +216,19 @@ Launch first node with the public key above.
 ```
 
 #### Setup node session keys
-- Copy validators' session keys to babe1 ~ 3, gran1 ~ 3, imol1 ~ 3, audi1 ~ 3, add prefix 0x.
 
-- Fill right secret phrase
+-   Copy validators' session keys to babe1 ~ 3, gran1 ~ 3, imol1 ~ 3, audi1 ~ 3, add prefix 0x.
 
-- Run command to setup node session keys
-  ```bash
-  cd scripts/session_keys
-  sh run.sh
-  ```
+-   Fill right secret phrase
+
+-   Run command to setup node session keys
+    ```bash
+    cd scripts/session_keys
+    sh run.sh
+    ```
 
 #### Re-launch nodes
+
 Re-launch all 3 nodes by running commands in section [Launch first node](#launch-first-node) and [Launch other two nodes](#launch-other-two-nodes).
 
 The network will finalize blocks.
