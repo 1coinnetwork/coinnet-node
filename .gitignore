@@ -28,4 +28,4 @@ rls*.log
 *.iml
 **/scripts/
 **/data/
-*.json/
+*.json
