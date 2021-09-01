@@ -9,7 +9,6 @@
     "telemetryEndpoints": [],
     "protocolId": "coinnet",
     "properties": {
-        "ss58Format": 85,
         "tokenDecimals": 12,
         "tokenSymbol": "1CN"
     },

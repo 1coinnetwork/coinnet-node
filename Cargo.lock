@@ -863,7 +863,7 @@ dependencies = [
 
 [[package]]
 name = "coinnet-node"
-version = "0.0.5"
+version = "1.0.0"
 dependencies = [
  "assert_cmd",
  "async-std",
