@@ -64,20 +64,20 @@ pub struct Extensions {
 /// Specialized `ChainSpec`.
 pub type ChainSpec = sc_service::GenericChainSpec<GenesisConfig, Extensions>;
 
-/// 1COIN testnet generator
-pub fn coinnet_test_config() -> Result<ChainSpec, String> {
-    ChainSpec::from_json_bytes(&include_bytes!("../res/coinnet.json")[..])
-}
+// /// 1COIN testnet generator
+// pub fn coinnet_test_config() -> Result<ChainSpec, String> {
+//     ChainSpec::from_json_bytes(&include_bytes!("../res/coinnet.json")[..])
+// }
 
 /// SWIVEL generator
 pub fn swivel_config() -> Result<ChainSpec, String> {
     ChainSpec::from_json_bytes(&include_bytes!("../res/swivel.json")[..])
 }
 
-/// 1COIN main config
-pub fn coinnet_main_config() -> Result<ChainSpec, String> {
-    ChainSpec::from_json_bytes(&include_bytes!("../res/coinnet_main.json")[..])
-}
+// /// 1COIN main config
+// pub fn coinnet_main_config() -> Result<ChainSpec, String> {
+//     ChainSpec::from_json_bytes(&include_bytes!("../res/coinnet_main.json")[..])
+// }
 
 fn session_keys(
     grandpa: GrandpaId,

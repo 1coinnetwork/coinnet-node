@@ -56,8 +56,9 @@ impl SubstrateCli for Cli {
                 )
             }
             "dev" => Box::new(chain_spec::development_config()),
-            "local" => Box::new(chain_spec::local_testnet_config()),
-            "testnet" | "coinnet" => Box::new(chain_spec::coinnet_test_config()?),
+            "local" | "testnet" => Box::new(chain_spec::local_testnet_config()),
+            // "cointest" => Box::new(chain_spec::coinnet_test_config()?),
+            // "coinnet" => Box::new(chain_spec::coinnet_main_config()?),
             "staging" => Box::new(chain_spec::staging_testnet_config()),
             "swivel" | "main" => Box::new(chain_spec::swivel_config()?),
             path => Box::new(chain_spec::ChainSpec::from_json_file(

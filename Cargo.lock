@@ -4128,7 +4128,7 @@ dependencies = [
  "frame-try-runtime",
  "log",
  "node-primitives",
- "pallet-assets",
+ "pallet-assets 3.0.0 (git+https://github.com/paritytech/substrate.git?tag=monthly-2021-05)",
  "pallet-authority-discovery",
  "pallet-authorship",
  "pallet-babe",
@@ -4244,7 +4244,7 @@ dependencies = [
  "hex-literal",
  "log",
  "node-primitives",
- "pallet-assets",
+ "pallet-assets 3.0.0 (git+https://github.com/paritytech/substrate.git?tag=monthly-2021-05)",
  "pallet-authority-discovery",
  "pallet-authorship",
  "pallet-babe",
@@ -4440,6 +4440,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ff55baddef9e4ad00f88b6c743a2a8062d4c6ade126c2a528644b8e444d52ce"
 dependencies = [
  "stable_deref_trait",
+]
+
+[[package]]
+name = "pallet-assets"
+version = "3.0.0"
+dependencies = [
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "pallet-balances",
+ "parity-scale-codec",
+ "serde",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
